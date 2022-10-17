@@ -1,34 +1,18 @@
-<h2 class="user-info">Login</h2>
+<div class="card">
+    <h3 class="card-header">Login to My Account</h3>
+    <form id="login-form" class="card-body">
+        <label class="form-label" for="username-login">Username</label>
+        <input id="username-login" type="text" autofocus="true" class="form-input-ls"/>
 
-<form class = 'login-form'>
-    <div class="mb-3">
-        <label for="login-username" class="form-label">Username</label>
-        <input type="text" class="form-control" id="login-username" aria-describedby="login-username-help">
-    </div>
-    <div class="mb-3">
-        <label for="login-password" class="form-label">Password</label>
-        <input type="password" class="form-control" id="login-password">
-    </div>
-    <button type="submit" class="btn btn-primary" id = 'login-btn'>Login</button>
-</form>
+        <label class="form-label" for="password-login">Password</label>
+        <input id="password-login" type="password" autofocus="true" class="form-input-ls"/>
 
-
-<h2 class="user-info">Create an account</h2>
-<form class = 'sign-up-form'>
-    {{!-- DO we need an email? --}}
-    {{!-- <div class="mb-3">
-        <label for="sign-up-email" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="sign-up-email" aria-describedby="sign-up-email-help">
-    </div> --}}
-    <div class="mb-3">
-        <label for="sign-up-username" class="form-label">Username</label>
-        <input type="text" class="form-control" id="sign-up-username" aria-describedby="sign-up-username-help">
+        <button type="submit" class="button-ls link-button">Log Me In!</button>
+        <br>
+        <a class="link-button" href="/signup">Create a New Account Instead</a>
+    </form>
+    
+    
     </div>
-    <div class="mb-3">
-        <label for="sign-up-password" class="form-label">Password</label>
-        <input type="password" class="form-control" id="sign-up-password">
-    </div>
-    <button type="submit" class="btn btn-primary" id = 'sign-up-btn'>Sign-up</button>
-</form>
 
 <script src ="/javascript/login.js"></script>

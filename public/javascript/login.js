@@ -1,4 +1,4 @@
-const signinFormHandler = async(event) => {
+const loginFormHandler = async(event) => {
     event.preventDefault();
 
     const username = document.querySelector('#username-login').value.trim();
@@ -6,7 +6,7 @@ const signinFormHandler = async(event) => {
 
 if (username && password) {
     const response = await fetch('/api/users/login', {
-        method: 'POST',
+        method: 'post',
         body: JSON.stringify({ username, password }),
         headers: {'Content-Type': 'application/json'}
     });
@@ -21,8 +21,8 @@ if (username && password) {
 }
 };
 
-const signupButtonHandler = async () => {
-    document.location.replace('/signup');
-};
+// const signupButtonHandler = async () => {
+//     document.location.replace('/signup');
+// };
 
 document.querySelector('#login-form').addEventListener('submit', loginFormHandler);

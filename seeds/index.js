@@ -5,7 +5,7 @@ const { User } = require('../models');
 const userSeed = require('./user-seeds.json');
 const { Post } = require('../models');
 const postSeed = require('./post-seeds.json');
-const { Comment } = require('..models')
+const { Comment } = require('../models')
 const commentSeed = require('./comment-seeds.json');
 
 const seedDatabase = async () => {

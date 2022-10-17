@@ -7,6 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "scripts": {
+    "test": "jest",
+    "start": "node server",
+    "seed": "node seeds/index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jlewisit/tech-blog.git"
@@ -28,3 +33,4 @@
     "sequelize": "^6.25.2"
   }
 }
+  

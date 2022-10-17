@@ -1,11 +1,12 @@
+const sequelize = require('../config/connection');
 const router = require('express').Router();
-const { Article, Comment, User } = require('../models');
+const { Post, Comment, User } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
-    // Get all articles and JOIN with user data
-    const articleData = await Article.findAll({
+    // Get all posts and JOIN with user data
+    const postData = await Post.findAll({
       include: [
         {
           model: Comment,
@@ -19,11 +20,11 @@ router.get('/', async (req, res) => {
     });
 
     // Serialize data so the template can read it
-    const articles = articleData.map((article) => article.get({ plain: true }));
+    const posts = postData.map((post) => post.get({ plain: true }));
 
     // Pass serialized data and session flag into template
     res.render('homepage', { 
-      articles, 
+      posts, 
       logged_in: req.session.logged_in 
     });
   } catch (err) {
@@ -31,7 +32,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-router.get('/article/:id', async (req, res) => {
+router.get('/post/:id', async (req, res) => {
   try {
     const projectData = await Project.findByPk(req.params.id, {
       include: [
@@ -42,10 +43,10 @@ router.get('/article/:id', async (req, res) => {
       ],
     });
 
-    const article = projectData.get({ plain: true });
+    const post = projectData.get({ plain: true });
 
-    res.render('article', {
-      ...article,
+    res.render('post', {
+      ...post,
       logged_in: req.session.logged_in
     });
   } catch (err) {

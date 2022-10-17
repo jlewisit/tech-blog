@@ -1,4 +1,4 @@
-async function loginFormHandler(event) {
+const signinFormHandler = async(event) => {
     event.preventDefault();
 
     const username = document.querySelector('#username-login').value.trim();
@@ -17,8 +17,12 @@ if (username && password) {
     }
     else {
         alert(response.statusText);
-    };
+    }
+}
 };
+
+const signupButtonHandler = async () => {
+    document.location.replace('/signup');
 };
 
 document.querySelector('#login-form').addEventListener('submit', loginFormHandler);

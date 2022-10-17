@@ -2,26 +2,32 @@
 [
     {
         "username": "Joe1",
+        "email": "email1@mail.com",
         "password": "password1"
     },
     {
         "username": "Joe2",
+        "email": "email2@mail.com",
         "password": "password2"
     },
     {
         "username": "Joe3",
+        "email": "email3@mail.com",
         "password": "password3"
     },
     {
         "username": "Joe4",
+        "email": "email4@mail.com",
         "password": "password4"
     },
     {
         "username": "Joe5",
+        "email": "email5@mail.com",
         "password": "password5"
     },
     {
         "username": "Joe6",
+        "email": "email6@mail.com",
         "password": "password6"
     }
 ]

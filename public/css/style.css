@@ -1,9 +1,11 @@
+
 :root {
-  --primary-color: #c7e9d5;
-  --secondary-color: #cee0c4;
-  --tertiary-color: #8ea1a1;
-  --lighter-color: #aca9a9;
-  --darker-color: #302120;
+  /* --primary-color: #202030; */
+  --primary-color: #d7fff6;
+  --secondary-color: slategray;
+  --tertiary-color: #d7fff6;
+  --lighter-color: white;
+  --darker-color: #202030;
   --border-radius-color: 0.3rem;
 }
 

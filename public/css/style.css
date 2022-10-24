@@ -14,10 +14,10 @@
 }
 
 body {
-  background-color: var(--primary-color);
+  background-color: var(--tertiary-color);
   padding: 0;
   margin: 0;
-  color: var(--tertiary-color);
+  color: var(--primary-color);
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 24px;
   line-height: 1.5;
@@ -83,7 +83,7 @@ footer {
   display: block;
   border: none;
   outline: none;
-  color: var(--tertiary-color);
+  color: var(--secondary-color);
   transform: translate(-1px, -1px);
   background-color: var(--secondary-color);
 }
@@ -98,16 +98,16 @@ footer {
   display: block;
   border: none;
   outline: none;
-  color: var(--lighter-color);
+  color: var(--secondary-color);
   transform: translate(-1px, -1px);
-  background-color: var(--lighter-color);
+  background-color: var(--secondary-color);
 }
 
 .button:hover,
 .button-ls:hover {
-  color: var(--primary-color);
-  background-color: var(--tertiary-color);
-  box-shadow: 2px 2px var(--tertiary-color);
+  color: var(--tertiary-color);
+  background-color: var(--primary-color);
+  box-shadow: 2px 2px var(--lighter-color);
   transform: translate(0, 0);
 }
 
@@ -116,9 +116,9 @@ footer {
 }
 
 .button-back {
-  color: var(--primary-color);
+  color: var(--tertiary-color);
   border: none;
-  background-color: var(--lighter-color);
+  background-color: var(--primary-color);
   border-radius: var(--border-radius-color);
   outline: none;
   box-shadow: 3px 3px var(--secondary-color);
@@ -149,7 +149,7 @@ footer {
 }
 
 .app-title {
-  color: var(--primary-color);
+  color: var(--tertiary-color);
   background-color: var(--secondary-color);
   font-size: 3rem;
   display: inline-block;
@@ -160,12 +160,12 @@ footer {
 
 .card {
   margin: 0 0 20px 0;
-  border: 2px solid var(--tertiary-color);
+  border: 2px solid var(--primary-color);
   border-radius: var(--border-radius-color);
 }
 
 .card-header {
-  background-color: var(--tertiary-color);
+  background-color: var(--primary-color);
   color: var(--secondary-color);
   border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
   padding: 1%;

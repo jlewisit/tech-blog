@@ -1,12 +1,12 @@
 
 :root {
-  /* --primary-color: #202030; */
   --primary-color: #202030;
   --secondary-color: slategray;
   --tertiary-color: #d7fff6;
   --lighter-color: white;
-  --tertiary-color: #12121f;
+  --darker-color: #12121f;
   --border-radius-color: 0.3rem;
+
 }
 
 * {
@@ -14,7 +14,7 @@
 }
 
 body {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   padding: 0;
   margin: 0;
   color: var(--tertiary-color);
@@ -60,7 +60,8 @@ footer {
 
 .nav {
   line-height: 1.25;
-  padding: 10px;
+  padding-bottom: 10px;
+  /* margin-right: 10px; */
   float: top;
 }
 
@@ -82,9 +83,9 @@ footer {
   display: block;
   border: none;
   outline: none;
-  color: #ffffff;
+  color: var(--tertiary-color);
   transform: translate(-1px, -1px);
-  background-color: var(--lighter-color);
+  background-color: var(--secondary-color);
 }
 
 .button-ls {
@@ -97,7 +98,7 @@ footer {
   display: block;
   border: none;
   outline: none;
-  color: #ffffff;
+  color: var(--lighter-color);
   transform: translate(-1px, -1px);
   background-color: var(--lighter-color);
 }
@@ -138,8 +139,8 @@ footer {
 }
 
 .hero {
-  background-color: var(--tertiary-color);
-  color: var(--primary-color);
+  background-color: var(--darker-color);
+  color: var(--secondary-color);
   padding: 3% 4%;
 }
 
@@ -148,13 +149,13 @@ footer {
 }
 
 .app-title {
-  color: var(--tertiary-color);
-  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
   font-size: 3rem;
   display: inline-block;
   border-radius: var(--border-radius-color);
   padding: 0 10px;
-  box-shadow: 6px 5px var(--lighter-color);
+  box-shadow: 6px 5px var(--tertiary-color);
 }
 
 .card {
@@ -165,7 +166,7 @@ footer {
 
 .card-header {
   background-color: var(--tertiary-color);
-  color: var(--primary-color);
+  color: var(--secondary-color);
   border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
   padding: 1%;
 }

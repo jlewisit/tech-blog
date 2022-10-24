@@ -3,9 +3,9 @@
   --primary-color: #202030;
   --secondary-color: slategray;
   --tertiary-color: #d7fff6;
-  --lighter-color: white;
+  --lighter-color: white; 
   --darker-color: #12121f;
-  --border-radius-color: 0.3rem;
+  --border-radius-color: 0.3rem; 
 
 }
 
@@ -58,10 +58,11 @@ footer {
   justify-content: center;
 }
 
-.nav {
+nav a {
+  padding-right: 10px;
   line-height: 1.25;
   padding-bottom: 10px;
-  /* margin-right: 10px; */
+  margin-right: 15px;
   float: top;
 }
 
@@ -106,7 +107,7 @@ footer {
 .button:hover,
 .button-ls:hover {
   color: var(--tertiary-color);
-  background-color: var(--primary-color);
+  background-color: var(--lighter-color);
   box-shadow: 2px 2px var(--lighter-color);
   transform: translate(0, 0);
 }
@@ -139,9 +140,24 @@ footer {
 }
 
 .hero {
-  background-color: var(--darker-color);
+  background-color: var(--primary-color);
   color: var(--secondary-color);
   padding: 3% 4%;
+}
+
+.button-create-new-post {
+  text-decoration: none;
+  width: 100%;
+  font-size: 1.3rem;
+  padding: 12px 8px;
+  margin: 5px 0;
+  border-radius: var(--border-radius-color);
+  display: block;
+  border: none;
+  outline: none;
+  color: var(--tertiary-color);
+  transform: translate(-1px, -1px);
+  background-color: var(--secondary-color);
 }
 
 .hero p {
@@ -213,7 +229,7 @@ footer {
 }
 
 .link-button {
-  color: var(--tertiary-color);
+  color: var(--primary-color);
 }
 
 .link-color {

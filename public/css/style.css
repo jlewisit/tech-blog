@@ -1,11 +1,11 @@
 
 :root {
   /* --primary-color: #202030; */
-  --primary-color: #d7fff6;
+  --primary-color: #202030;
   --secondary-color: slategray;
   --tertiary-color: #d7fff6;
   --lighter-color: white;
-  --darker-color: #202030;
+  --tertiary-color: #12121f;
   --border-radius-color: 0.3rem;
 }
 
@@ -14,10 +14,10 @@
 }
 
 body {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   padding: 0;
   margin: 0;
-  color: var(--darker-color);
+  color: var(--tertiary-color);
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 24px;
   line-height: 1.5;
@@ -31,7 +31,7 @@ h6 {
   margin: 0;
   line-height: 1.25;
   font-weight: 700;
-  color: var(--darker-color);
+  color: var(--tertiary-color);
 }
 
 h4 {
@@ -106,7 +106,7 @@ footer {
 .button-ls:hover {
   color: var(--primary-color);
   background-color: var(--tertiary-color);
-  box-shadow: 2px 2px var(--darker-color);
+  box-shadow: 2px 2px var(--tertiary-color);
   transform: translate(0, 0);
 }
 
@@ -133,12 +133,12 @@ footer {
 .button-back:hover {
   color: var(--primary-color);
   background-color: var(--tertiary-color);
-  box-shadow: 2px 2px var(--darker-color);
+  box-shadow: 2px 2px var(--tertiary-color);
   transform: translate(0, 0);
 }
 
 .hero {
-  background-color: var(--darker-color);
+  background-color: var(--tertiary-color);
   color: var(--primary-color);
   padding: 3% 4%;
 }
@@ -148,8 +148,8 @@ footer {
 }
 
 .app-title {
-  color: var(--darker-color);
-  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+  background-color: var(--tertiary-color);
   font-size: 3rem;
   display: inline-block;
   border-radius: var(--border-radius-color);
@@ -159,12 +159,12 @@ footer {
 
 .card {
   margin: 0 0 20px 0;
-  border: 2px solid var(--darker-color);
+  border: 2px solid var(--tertiary-color);
   border-radius: var(--border-radius-color);
 }
 
 .card-header {
-  background-color: var(--darker-color);
+  background-color: var(--tertiary-color);
   color: var(--primary-color);
   border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
   padding: 1%;
@@ -204,7 +204,7 @@ footer {
 }
 
 .list-item:hover {
-  background-color: var(--darker-color);
+  background-color: var(--tertiary-color);
 }
 
 .link {
@@ -212,7 +212,7 @@ footer {
 }
 
 .link-button {
-  color: var(--darker-color);
+  color: var(--tertiary-color);
 }
 
 .link-color {

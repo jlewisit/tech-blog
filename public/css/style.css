@@ -140,7 +140,7 @@ nav a {
 }
 
 .hero {
-  background-color: var(--primary-color);
+  background-color: var(--darker-color);
   color: var(--secondary-color);
   padding: 3% 4%;
 }
@@ -393,10 +393,6 @@ nav a {
   font-size: 0.9rem;
 }
 
-.logo-background {
-  background-color: white;
-}
-
 .nav-link {
   color: var(--primary-color);
   font-size: 150%;
@@ -406,8 +402,9 @@ nav a {
 
 .hero-image {
   background-image: url("/img/blue-binary.jpg");
-  background-color: var(--primary-color);
-  height: 500px;
+  background-color: var(--secondary-color);
+  height: 700px;
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -548,8 +545,6 @@ a{
   font-size: x-large;
 }
 
-
-
 .mb-3 {
   /* background-color: var(--tertiary-color); */
   color: var(--primary-color);
@@ -601,9 +596,9 @@ a{
   flex-direction: column;
 }
 
-.hero p {
+/* .hero p {
   max-width: 75%;
-}
+} */
 
 .card {
   /* background-color: var(--secondary-color); */

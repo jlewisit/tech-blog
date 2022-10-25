@@ -404,15 +404,9 @@ nav a {
   font-family: sans-serif;
 }
 
-
-
-.logo {
-  height: 80px;
-}
-
 .hero-image {
-  background-image: url("/img/Cheering-in-box.jpg");
-  background-color: var(--secondary-color);
+  background-image: url("/img/blue-binary.jpg");
+  background-color: var(--primary-color);
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;
@@ -421,7 +415,7 @@ nav a {
 }
 
 .hero-image-login {
-  background-image: url("/img/Cheering-in-box.jpg");
+  background-image: url("/img/blue-binary.jpg");
   background-color: var(--secondary-color);
   height: 700px;
   opacity: 90%;
@@ -432,9 +426,6 @@ nav a {
 }
 
 .navbar {
-  /* display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; */
   background-color: var(--lighter-color);
 }
 

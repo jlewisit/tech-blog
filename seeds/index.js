@@ -1,28 +1,42 @@
+// Seeds requires 
+
+// ________Uncomment once models and seeds data created__________
+
+
 const sequelize = require('../config/connection');
-// const { User, Comment, Post } = require('../models');
 
+const userData = require('./userData');
 const { User } = require('../models');
-const userSeed = require('./user-seeds.json');
+const commentData = require('./commentData')
+const { Comment } = require('../models');
+const postData = require('./postData');
 const { Post } = require('../models');
-const postSeed = require('./post-seeds.json');
-const { Comment } = require('../models')
-const commentSeed = require('./comment-seeds.json');
 
-const seedDatabase = async () => {
+const seedALL = async () => {
 
-  await sequelize.sync({ force: true });
-  console.log('**DATABASE SYNCED**/n');
+    await sequelize.sync({ force: true});
+    console.log('\n----- DATABASE SYNCED -----\n');
 
-  await User.bulkCreate(userSeed);
-  console.log('**USER TABLE SEEDED**/n');
+    await User.bulkCreate(userData, {
+        individualHooks: true,
+        returning: true,
+    });
+    console.log('\n----- USER SEEDED -----\n');
 
-  await Post.bulkCreate(postSeed);
-  console.log('**POST TABLE SEEDED**/n');
 
-  await Comment.bulkCreate(commentSeed);
-  console.log('**COMMENT TABLE SEEDED**/n');
+    await Post.bulkCreate(postData, {
+        individualHooks: true,
+        returning: true,
+    });
+    console.log('\n----- POST SEEDED -----\n');
 
-  process.exit(0);
+    await Comment.bulkCreate(commentData, {
+        individualHooks: true,
+        returning: true,
+    });
+    console.log('\n----- COMMENT SEEDED -----\n');
+
+    process.exit(0)
 };
 
-seedDatabase();
+seedALL();

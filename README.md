@@ -26,5 +26,6 @@ I'm also utilizing the [dotenv package](https://www.npmjs.com/package/dotenv) to
 
 The [express-session](https://www.npmjs.com/package/express-session) package stores the session data on the client in a cookie. When you are idle on the site for more than a set time, the cookie will expire and you will be required to log in again to start a new session. This is the default behavior and I did not have to do anything to the application other than implement the npm package.
 
+![image](https://user-images.githubusercontent.com/102529279/197694116-aae548fc-bd81-462b-8915-b563dfaead13.png)
 ![image](https://user-images.githubusercontent.com/102529279/197471139-09972dee-0407-4f2f-9469-ee903c7080ff.png)
 ![image](https://user-images.githubusercontent.com/102529279/197471432-a8dce4a7-9fee-4d6f-b204-f0d2b66aa253.png)

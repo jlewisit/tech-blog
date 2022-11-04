@@ -13,8 +13,9 @@ router.post('/', async (req, res) => {
         // Set up sessions with a 'loggedIn' variable set to `true`
         req.session.save(() => {
             req.session.loggedIn = true;
-
-            res.status(200).json(dbUserData);
+        req.session.username = dbUserData.username
+        req.session.user_id = dbUserData.id
+        res.status(200).json(dbUserData);
         });
     } catch (err) {
         console.log("post err with creating user = " + err);
